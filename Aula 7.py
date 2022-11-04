@@ -15,9 +15,12 @@ chaves , valores = dicionario_para_listas(d)
 print(chaves)
 print(valores)
 #Ex 2
+text = open("texto.txt","r")
+
 def desenha_grafico_barras(keys,values):
     
     plt.bar(keys,values)
     return plt.show()
 desenha_grafico_barras(chaves,valores)
+
 
