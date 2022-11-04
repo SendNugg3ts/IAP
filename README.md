@@ -1,2 +1,2 @@
 # IAP
-Ficheiros associados à UC Introdução aos Algoritmos e Programação
+Ficheiros associados à UC Introdução aos Algoritmos e Programação do MMC
