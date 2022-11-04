@@ -1,2 +1,2 @@
 # IAP
-Ficheiros associados à UC IAP
+Ficheiros associados à UC Introdução aos Algoritmos e Programação
