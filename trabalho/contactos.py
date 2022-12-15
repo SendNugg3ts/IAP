@@ -9,8 +9,9 @@ def add_person(id,name, phone_number):
     lista.close()
     print("Contacto adicionado com sucesso!")
 
-def find_person(phone_list, name):
-    for person in phone_list:
+def find_person(name):
+    lista = open("lista.txt","r")
+    for person in lista:
         if person["name"] == name:
             return person
     return None    
@@ -61,8 +62,6 @@ else:
         print_phone_list()    
     if args[1].lower() == "pesquisar":
         pass
-
-
 
 
 

@@ -1,4 +1,3 @@
-
 nome: Lipe   id: 900  número: 83287
 nome: Quintas   id: 090329  número: 938293
 nome: Rosario   id: 39289  número: 098908
