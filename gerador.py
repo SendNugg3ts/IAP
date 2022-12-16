@@ -1,7 +1,9 @@
 # Conteúdos aula 2 e 3
 # ctrl + k + c / ctrl + k + u
 # formato = input("Insira um formato (yaml ou json): ")
-
+l = [1,2,3,4,5]
+l[2]=4
+print(l)
 # if formato.upper() == "YAML":
 #     titulo = input("Qual o título da obra? ")
 #     nome= input ("Qual o nome do autor? ")
