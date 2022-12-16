@@ -44,17 +44,9 @@ def find_person(regex):
     else:
         for linha in lista:
             separado=linha.split(" " or "\n")
-            if separado[1]== results[0] or separado[5]== results[0]:
+            if separado[1].lower()== results[0] or separado[5]== results[0]:
                 print(linha)
-
-def find_person(name):
-    lista = open("lista.txt","r")
-    for person in lista:
-        if person["name"] == name:
-            return person
-    return None    
-
-
+   
 def print_phone_list():
     lista=open("lista.txt","r")
     linhas=sorted(lista.readlines())

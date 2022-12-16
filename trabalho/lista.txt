@@ -1,4 +1,3 @@
-
 nome: lipe   id: 1  número: 97878
 nome: meira   id: 4  número: 483476384
 nome: carina   id: 5  número: 483473678
@@ -10,4 +9,3 @@ nome: Quintas   id: 090329  número: 938293
 nome: Rosario   id: 39289  número: 098908
 nome: Ana   id: 382783  número: 837983
 nome: cagao   id: 90  número: 908768878
-
