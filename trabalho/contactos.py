@@ -2,6 +2,8 @@ import sys
 import re
 args = sys.argv
 
+def importfile():
+    return None
 
 def edit_list():
     id=input('Qual é o ID do contacto a editar?')
