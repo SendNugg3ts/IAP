@@ -34,6 +34,7 @@ def add_person(name, phone_number):
     lista.close()
     print("Contacto adicionado com sucesso!")
 
+<<<<<<< HEAD:contactos.py
 def find_person(regex):
     rlista= open("lista.txt","r")
     lista=rlista.readlines()
@@ -46,6 +47,14 @@ def find_person(regex):
             if separado[1]== results[0] or separado[5]== results[0]:
                 print(linha)
 
+=======
+def find_person(name):
+    lista = open("lista.txt","r")
+    for person in lista:
+        if person["name"] == name:
+            return person
+    return None    
+>>>>>>> origin:trabalho/contactos.py
 
 def print_phone_list():
     lista=open("lista.txt","r")
@@ -102,8 +111,6 @@ else:
         print_phone_list()    
     if args[1].lower() == "pesquisar":#done
         find_person(args[2])
-
-
 
 
 
