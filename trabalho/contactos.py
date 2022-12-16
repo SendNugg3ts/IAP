@@ -106,7 +106,10 @@ else:
         print_phone_list()    
     if args[1].lower() == "pesquisar":#done
         find_person(args[2])
-
+    if args[1].lower() =="importar":
+        pass
+    if args[1].lower() =="extrair":
+        pass
 
 
 
