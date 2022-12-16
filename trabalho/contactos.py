@@ -6,25 +6,29 @@ args = sys.argv
 def edit_list():
     id=input('Qual é o ID do contacto a editar?')
     lista=open("lista.txt","r")
-    listaA=open("lista.txt","a")
-    listaW =open("lista.txt","w")
+    newlist=[]
     lerlista=lista.readlines()
-    print(lerlista)
     for linha in lerlista:
         separado=linha.split(" " or "\n")
-        print(separado)
         if separado[5]== id:
             change=input("Mudar Nome ou Nº?")
-            if change== "Nome":
+            if change.lower()== "nome":
                 newNome=input("Qual o novo Nome?")
-                separado[2]=newNome
-                listaA.write("".join(separado))
-            elif change== "Nº":
+                separado[1]=newNome
+                muda=f"nome: {newNome}   id: {separado[5]}  número: {separado[8]}"
+                newlist.append(muda)
+            elif change.lower()== "nº":
                 newN=input("Qual o novo Nº?")
-                separado[8]=newN
-                listaA.write("".join(separado))
+                separado[8]=newN +"\n"
+                muda=f"nome: {separado[1]}   id: {separado[5]}  número: {separado[8]}"
+                newlist.append(muda)
         else:
-            pass
+            newlist.append(linha)
+    if newlist == lerlista:
+        print("Esse contacto não existe")     
+    listaW =open("lista.txt","w")
+    listaW.write("".join(newlist))
+    listaW.close()  
 
 
 def add_person(name, phone_number):
@@ -94,7 +98,7 @@ else:
         tele  = separado[1]
         add_person(nome,tele)
 
-    if args[1].lower() == "editar":
+    if args[1].lower() == "editar":#done
         edit_list()
     if args[1].lower() == "apagar": #done
         remove_person(args[2])
