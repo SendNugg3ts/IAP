@@ -6,6 +6,8 @@
 
 - criar funcao para importar ficheiro ✅
 
-- criar funcao para extrair ficheiro 🔧 
+- criar funcao para extrair ficheiro ✅
 
 - convert the phone list to json ✅ 
+
+- fazer relatório do trabalho
