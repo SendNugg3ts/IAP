@@ -1,33 +1,10 @@
 {
-    "contacts": [
-        {
-            "nome": "Lipe",
-            "id": 900, 
-            "número": 83287
-        },
-
-        {
-            "nome": "Quintas",
-            "id": 90329, 
-            "número": 938293
-        },
-
-        {
-            "nome": "Rosario", 
-            "id": 39289, 
-            "número": 98908
-        },
-
-        {
-            "nome": "Ana", 
-            "id": 382783, 
-            "número": 837983
-        },
-
-        {
-            "nome": "cagao", 
-            "id": 90, 
-            "número": 908768878
-        }
-    ]
+	"contactos": 
+		[
+			{"nome": "Lipe", "id": 900, "numero": 83287},
+			{"nome": "Quintas", "id": 90329, "numero": 938293},
+			{"nome": "Rosario", "id": 39289, "numero": 98908},
+			{"nome": "Ana", "id": 382783, "numero": 837983},
+			{"nome": "cagao", "id": 90, "numero": 908768878}
+		]
 }

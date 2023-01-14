@@ -1,13 +1,22 @@
+import json
 import sys 
 args = sys.argv
 
 
 
 def add_person(id,name, phone_number):
-    lista = open("lista.txt","a")
-    lista.write(f"nome: {name}   id: {id}  número: {phone_number}\n")
-    lista.close()
+    # lista = open("lista.json","a")
+    # lista.write(f"nome: {name}, id: {id}, número: {phone_number}\n")
+    # lista.close()
+    # print("Contacto adicionado com sucesso!")
+
+    jsonFile = open("lista.json","r")
+    data = json.load(jsonFile)
+    jsonFile.close()
+
+    data['contacts'] = data["contacts"].insert('"nome": f"{name}", "id": id, "numero": {phone_number}"\n"')
     print("Contacto adicionado com sucesso!")
+
 
 def find_person(name):
     lista = open("lista.txt","r")
