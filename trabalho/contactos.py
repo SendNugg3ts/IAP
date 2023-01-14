@@ -78,6 +78,13 @@ def remove_person(id):
     listaW.close()
     lista.close()
 
+def importacao(file):
+    listaNova=open(file,"r")
+    NossaLista=open('lista.txt',"a+")
+    NossaLista.write(listaNova.read())
+    listaNova.close()
+    NossaLista.close()
+    print_phone_list()
 
 
 if len(args)==1:
@@ -108,8 +115,8 @@ else:
         print_phone_list()    
     if args[1].lower() == "pesquisar":#done
         find_person(args[2])
-    if args[1].lower() =="importar":
-        pass
+    if args[1].lower() =="importar":#done
+        importacao(args[2])
     if args[1].lower() =="extrair":
         pass
 
