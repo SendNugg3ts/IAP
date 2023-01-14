@@ -4,7 +4,7 @@
 
 - criar funcao editar ✅ 
 
-- criar funcao para importar ficheiro 🔧
+- criar funcao para importar ficheiro ✅
 
 - criar funcao para extrair ficheiro 🔧 
 
