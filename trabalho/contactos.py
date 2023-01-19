@@ -161,6 +161,8 @@ else:
         print("apagar [id]           Elimina o contacto com o identificador [id]")
         print("lista                 Apresenta a lista total de contactos por ordem alfabética")
         print("pesquisar [padrao]    Pesquisa e apresenta os resultados da procura por [padrao] na lista")
+        print("importar [ficheiro]   Importa um ficheiro txt e adiciona os seus contactos à lista")
+        print("extrair [formato] [ficheiro]  Extrai a lista telefónica para o formato especificado e para o ficheiro que se pretende")
 
     if args[1].lower() == "adicionar": #done
         contacto =input("Nome e Nº de telemóvel:")
